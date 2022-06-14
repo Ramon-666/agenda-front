@@ -68,14 +68,14 @@
                         text
                         @click="dialogAdd = false"
                     >
-                        Close
+                        Cerrar
                     </v-btn>
                     <v-btn
                         color="blue darken-1"
                         text
                         @click="AddContacto(NuevoContacto)"
                     >
-                        Save
+                        Guardar
                     </v-btn>
                     </v-card-actions>
                 </v-card>
@@ -125,11 +125,11 @@
                         align="center"
                         justify="space-around"
                     >
-                        <v-btn color="warning" style="margin: 5px;" @click="EliminarContacto(item._id)">
+                        <v-btn color="error" style="margin: 5px;" @click="EliminarContacto(item._id)">
                             <v-icon left>
                                 mdi-delete
                             </v-icon>
-                            Delete
+                            Borrar
                         </v-btn>
                         
                         <!-- -------------------------------------------------------------------- -->
@@ -142,7 +142,7 @@
                             <template v-slot:activator="{ on, attrs }">
                                 <v-btn
                                     tile
-                                    color="success"
+                                    color="warning"
                                     style="margin: 5px;"
                                     @click="getContactoid(item._id)"
                                     dark
@@ -152,7 +152,7 @@
                                     <v-icon left>
                                         mdi-pencil
                                     </v-icon>
-                                    Edit
+                                    Editar
                                 </v-btn>
                             </template>
                             <v-card>
@@ -197,14 +197,14 @@
                                     text
                                     @click="dialog = false"
                                 >
-                                    Close
+                                    Cerrar
                                 </v-btn>
                                 <v-btn
                                     color="blue darken-1"
                                     text
                                     @click="EditarContacto(editar)"
                                 >
-                                    Save
+                                    Guardar
                                 </v-btn>
                                 </v-card-actions>
                             </v-card>
@@ -266,14 +266,14 @@
                                     text
                                     @click="dialogCita = false"
                                 >
-                                    Close
+                                    Cerrar
                                 </v-btn>
                                 <v-btn
                                     color="blue darken-1"
                                     text
                                     @click="AddCita(Cita)"
                                 >
-                                    Save
+                                    Guardar
                                 </v-btn>
                                 </v-card-actions>
                             </v-card>

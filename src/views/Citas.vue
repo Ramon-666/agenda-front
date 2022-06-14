@@ -50,11 +50,11 @@
                     <v-row style="margin: 5px;"
                         justify="space-around"
                     >
-                        <v-btn color="warning" style="margin: 5px;" @click="EliminarCita(item._id)">
+                        <v-btn color="error" style="margin: 5px;" @click="EliminarCita(item._id)">
                             <v-icon left>
                                 mdi-delete
                             </v-icon>
-                            Delete
+                            Borrar
                         </v-btn>
                         
                         <!-- -------------------------------------------------------------------- -->
@@ -67,7 +67,7 @@
                             <template v-slot:activator="{ on, attrs }">
                                 <v-btn
                                     tile
-                                    color="success"
+                                    color="warning"
                                     style="margin: 5px;"
                                     @click="getCitaid(item._id)"
                                     dark
@@ -77,7 +77,7 @@
                                     <v-icon left>
                                         mdi-pencil
                                     </v-icon>
-                                    Edit
+                                    Editar
                                 </v-btn>
                             </template>
                             <v-card>
@@ -114,14 +114,14 @@
                                     text
                                     @click="dialog = false"
                                 >
-                                    Close
+                                    Cerrar
                                 </v-btn>
                                 <v-btn
                                     color="blue darken-1"
                                     text
                                     @click="EditarCita(Cita)"
                                 >
-                                    Save
+                                    Guardar
                                 </v-btn>
                                 </v-card-actions>
                             </v-card>

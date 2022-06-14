@@ -1,29 +1,23 @@
 <template>
-  <v-app>
+  <v-app style="margin: 80px;">
     <v-app-bar
       app
-      color="#3a2880"
+      color="#0E4159"
       dark
-      style="justify-content: space-between; display: flex;"
+      style="justify-content: center; display:flex; margin: 10px; height: 120px;"
     >
     
-    <img style="height: 100%; margin: 20px;" src="./assets/logo_agenda.png" alt="">
-    Agenda personal
+    <img style="height: 250%; margin: 40px; padding-top: 55px; font-family:;" src="./assets/logo_agenda.png" alt="">
+    <h1 style="padding-top: 55px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Tu Agenda Personal</h1>
     </v-app-bar>
 
     <v-main>
       <router-view/>
     </v-main>
     
-    <v-footer style="background-color: #3a2880; color: white;">
-      <v-card
-        flat
-        tile
-        class="indigo lighten-1 white--text text-center"
-        style="width: 100%;"
-      >
+    <v-footer style="background-color: #0E4159; color: white;">
       <v-card-text>
-         <v-simple-table style="background-color: #3a2880; color: white;" >
+         <v-simple-table style="background-color: #0E4159; color: white;" >
           <template v-slot:default>
             <thead>
               <tr>
@@ -51,7 +45,6 @@
           </template>
         </v-simple-table>
       </v-card-text>
-      </v-card>
     </v-footer>
   </v-app>
 </template>
@@ -69,19 +62,9 @@ export default {
         correo:"ar.sierrasanchez@ugto.mx"
       },
       {
-        nombre:"Joel Salvador Martínez Jiménez",
-        NUA:"392556",
-        correo:"js.martinezjimenez@ugto.mx"
-      },
-      {
-        nombre:"Sergio Alberto Zavala Camacho",
-        NUA:"146737",
-        correo:"sa.zavalacamacho@ugto.mx"
-      },
-      {
-        nombre:"Bernardo Andrés Bivian Hernández",
-        NUA:"146479",
-        correo:"ba.bivianhernandez@ugto.mx"
+        nombre:"Jesus Antonio Rodriguez Lopez",
+        NUA:"146596",
+        correo:"ja.rodriguezl@ugto.mx"
       }
     ]
   }),

@@ -10,7 +10,7 @@ import vuetify from './plugins/vuetify'
 Vue.config.productionTip = false
 Vue.use(VueAxios, axios)
 
-axios.defaults.baseURL = 'https://proyecto-computo-agenda.herokuapp.com/api'
+axios.defaults.baseURL = 'https://lenguajes-proyecto-agenda.herokuapp.com/api'
 
 new Vue({
   router,
